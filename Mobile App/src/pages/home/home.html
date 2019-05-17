@@ -1,0 +1,20 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title class="white" text-center [@fadeInOut] *ngIf="showHeader">
+      Mediafy
+    </ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content id="gradient" padding>
+    <div class="my-text" id="my-text">
+        <p class="label">{{myText ? 'You said' : ''}}</p>
+        <p class="text">{{myText || ''}}</p>
+    </div>
+    <div class="response" id="response">
+        <p class="text">{{response}}</p>
+    </div>
+    <!-- <img src="https://cdn.dribbble.com/users/32512/screenshots/3546148/apple_siri_motion_animation_by_gleb.gif" alt="" class="tap-to-speak" *ngIf="!listening" (click)="listening = true; initWave()"> -->
+    <img src="assets/imgs/mic.gif" alt="" class="tap-to-speak" *ngIf="!listening" (click)="startListening()">
+    <div id="wave"></div>
+</ion-content>

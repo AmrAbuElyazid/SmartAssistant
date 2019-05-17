@@ -1,0 +1,62 @@
+page-home {
+    @import url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
+    font-family: 'Baloo Chettan', cursive;
+    .content {
+        background: #0c071f;
+    }
+    #gradient .scroll-content{
+        overflow: hidden;
+    }
+    #siri {
+        position: absolute;
+        bottom: -50px;
+    }
+    .tap-to-speak {
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        transform: translateX(-50%);
+        width: calc(80px * 2);
+        height: calc(60px * 2);
+        display: block;
+    }
+    .fadeIn {
+        animation: fadeIn .5s ease;
+        animation-fill-mode: forwards;
+    }
+    .fadeOut {
+        animation: fadeOut .5s ease;
+        animation-fill-mode: forwards;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    @keyframes fadeOut {
+        0% {opacity: 1;}
+        100% {opacity: 0;}
+    }
+    .my-text {
+        .label {
+            color: lightgrey;
+            line-height: 0;
+        }
+        .text {
+            color: white;
+            font-size: 2rem;
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+            overflow: hidden;
+            max-height: 7.2em;
+            line-height: 1.8em;
+        }
+    }
+    .response {
+        margin-top: 100px;
+        .text {
+            color: white;
+            text-align: center;
+            font-size: 4rem;
+        }
+    }
+}

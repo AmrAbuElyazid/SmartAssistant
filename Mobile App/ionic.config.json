@@ -1,0 +1,13 @@
+{
+  "name": "Mediafy",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://anghamify.cf/v1"
+    }
+  ]
+}
